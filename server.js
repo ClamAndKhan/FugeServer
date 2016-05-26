@@ -1,7 +1,8 @@
-
+require('./constant.js')
 var express		= require('express');   
 var config		= require('./config.js');
 var mongoose	= require('mongoose');
+
 
 var app = express(); 
 var router = express.Router();

@@ -1,0 +1,230 @@
+
+{
+	"routineId": 1,
+	"routineName": "The 5x5 Program",
+	"difficulty": "medium",
+	"numberOfWorkouts": 2,
+	"recommendedDays": 3,
+	"workouts": [
+		{
+			"workoutId": 1,
+			"wourkoutName": "The 5x5 Program_1",
+			"userLastCompleted": "05/18/16 23:00",
+			"musclegroups": ["legs","arms"]
+			"exercises": [
+				{
+					"exerciseName": "Barbell Squat",
+					"bodyWeight": false,
+					"recommendedSets": 5,
+					"recommendedReps": 5,
+					"recommendedStartWeight": {
+						"beginner": 145,
+						"intermediate": 155,
+						"expert": 165,
+						"pro": 175
+					},
+					"recommendedWeightIncrement": 10,
+					"recommendedRepIncrement": 0,
+					"videoUrl": "http://videocdn.bodybuilding.com/video/mp4/118000/118981m.mp4",
+					"picUrl": "http://www.workoutroutinewarehouse.com/images/squats-2.png",
+					"userStatus": {
+						"finalCompleted": "05/18/16 10:05",
+						"completedSets": [
+							{
+								"reps": 5,
+								"weight": 145,
+								"completedDateTime": "05/18/16 10:01"
+							},
+							{
+								"reps": 5,
+								"weight": 155,
+								"completedDateTime": "05/18/16 10:02"
+							},
+							{
+								"reps": 5,
+								"weight": 165,
+								"completedDateTime": "05/18/16 10:03"
+							},
+							{
+								"reps": 4,
+								"weight": 175,
+								"completedDateTime": "05/18/16 10:04"
+							},
+							{
+								"reps": 3,
+								"weight": 185,
+								"completedDateTime": "05/18/16 10:05"
+							}
+						]
+					}
+				},
+
+				{
+					"exerciseName": "Barbell Bench Press - Medium Grip",
+					"bodyWeight": false,
+					"recommendedSets": 5,
+					"recommendedReps": 5,
+					"recommendedStartWeight": {
+						"beginner": 100,
+						"intermediate": 110,
+						"expert": 120,
+						"pro": 130
+					},
+					"recommendedWeightIncrement": 10,
+					"recommendedRepIncrement": 0,
+					"videoUrl": "http://videocdn.bodybuilding.com/video/mp4/52000/53781m.mp4",
+					"picUrl": "http://www.workoutroutinewarehouse.com/images/decline-bench-press-1.png",
+					"userLastCompleted": "05/18/16 10:20",
+					"userCompletedSets": [
+						{
+							"reps": 5,
+							"weight": 100
+						},
+						{
+							"reps": 5,
+							"weight": 110
+						},
+						{
+							"reps": 5,
+							"weight": 115
+						},
+						{
+							"reps": 5,
+							"weight": 120
+						},
+						{
+							"reps": 4,
+							"weight": 125
+						}
+					]
+				},
+
+				{
+					"exerciseName": "Bent Over Barbell Row",
+					"bodyWeight": false,
+					"recommendedSets": 5,
+					"recommendedReps": 5,
+					"recommendedStartWeight": {
+						"beginner": 120,
+						"intermediate": 125,
+						"expert": 130,
+						"pro": 135
+					},
+					"recommendedWeightIncrement": 10,
+					"recommendedRepIncrement": 0,
+					"videoUrl": "http://videocdn.bodybuilding.com/video/mp4/38000/38411m.mp4",
+					"picUrl": "http://www.workoutroutinewarehouse.com/images/barbell-rear-delt-row-2.png",
+					"userLastCompleted": "05/18/16 10:50",
+					"userCompletedSets": [
+						{
+							"reps": 5,
+							"weight": 145
+						},
+						{
+							"reps": 5,
+							"weight": 155
+						},
+						{
+							"reps": 5,
+							"weight": 165
+						},
+						{
+							"reps": 4,
+							"weight": 175
+						},
+						{
+							"reps": 3,
+							"weight": 185
+						}
+					]
+				},
+
+				{
+					"exerciseName": "Pullups",
+					"bodyWeight": true,
+					"recommendedSets": 2,
+					"recommendedReps": 8,
+					"recommendedStartWeight": {
+						"beginner": 8,
+						"intermediate": 10,
+						"expert": 12,
+						"pro": 14
+					},
+					"recommendedWeightIncrement": 0,
+					"recommendedRepIncrement": 5,
+					"videoUrl": "http://videocdn.bodybuilding.com/video/mp4/40000/40861m.mp4",
+					"picUrl": "http://www.workoutroutinewarehouse.com/images/gironda-sternum-chins-1.png",
+					"userLastCompleted": "05/18/16 11:10",
+					"userCompletedSets": [
+						{
+							"reps": 8,
+							"weight": null
+						},
+						{
+							"reps": 13,
+							"weight": null
+						}
+					]
+				},
+
+				{
+					"exerciseName": "Side Lateral Raise",
+					"bodyWeight": false,
+					"recommendedSets": 2,
+					"recommendedReps": 8,
+					"recommendedStartWeight": {
+						"beginner": 10,
+						"intermediate": 20,
+						"expert": 30,
+						"pro": 40
+					},
+					"recommendedWeightIncrement": 5,
+					"recommendedRepIncrement": 0,
+					"videoUrl": "http://videocdn.bodybuilding.com/video/mp4/40000/41051m.mp4",
+					"picUrl": "http://www.workoutroutinewarehouse.com/images/dumbbell-lateral-raises-1.png",
+					"userLastCompleted": "05/18/16 11:30",
+					"userCompletedSets": [
+						{
+							"reps": 8,
+							"weight": 30
+						},
+						{
+							"reps": 8,
+							"weight": 35
+						}
+					]
+				},
+
+				{
+					"exerciseName": "Sit-up",
+					"bodyWeight": true,
+					"recommendedSets": 2,
+					"recommendedReps": 15,
+					"recommendedStartWeight": {
+						"beginner": 15,
+						"intermediate": 15,
+						"expert": 20,
+						"pro": 25
+					},
+					"recommendedWeightIncrement": 0,
+					"recommendedRepIncrement": 0,
+					"videoUrl": "http://videocdn.bodybuilding.com/video/mp4/40000/40861m.mp4",
+					"picUrl": "http://www.workoutroutinewarehouse.com/images/gironda-sternum-chins-1.png",
+					"userLastCompleted": "05/18/16 11:10",
+					"userCompletedSets": [
+						{
+							"reps": 13,
+							"weight": null
+						},
+						{
+							"reps": 11,
+							"weight": null
+						}
+					]
+				}
+
+			]
+		}
+	]
+
+}

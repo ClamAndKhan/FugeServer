@@ -1,0 +1,23 @@
+var constants = {
+
+	BARBELL_SQUAT: 'Barbell Squat',
+	BARBELL_SQUAT_WEIGHT: 125,
+
+	BARBELL_BENCH_PRESS_MEDIUM_GRIP: "Barbell Bench Press - Medium Grip",
+	BARBELL_BENCH_PRESS_MEDIUM_GRIP_WEIGHT: 75,
+
+	BENT_OVER_BARBELL_ROW: "Bent Over Barbell Row",
+	BARBELL_BENCH_PRESS_MEDIUM_GRIP_WEIGHT: 60,
+
+	SIDE_LATERAL_RAISE: "Side Lateral Raise",
+	SIDE_LATERAL_RAISE_WEIGHT: 20 ,
+
+
+	PULLUPS: "Pull-ups",
+	SITUPS: "Sit-ups",
+
+	FIVE_PERCENT_MULTIPLIER: 1.05
+
+}
+
+module.exports = constants;
