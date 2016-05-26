@@ -1,4 +1,4 @@
-var Routines = require('../models/RoutineModel.js');
+var Routines = require('../models/routineModel.js');
 
 var RoutineService = {
 
