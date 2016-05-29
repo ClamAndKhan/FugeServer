@@ -9,6 +9,9 @@ module.exports = function(app,router) {
   router.route('/users/create')
   	.post(UserCtrl.create)
 
+  router.route('/users/updateInfo')
+    .post(UserCtrl.updateInfo)
+
   router.route('/users/login') 
   	.post(UserCtrl.login)
 

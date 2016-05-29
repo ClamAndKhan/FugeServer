@@ -2,6 +2,7 @@ var User = require('../models/userModel.js');
 // var jwt  = require('../components/auth.js').jwt;
 var jwt = require('jsonwebtoken')
 var config = require.main.require('./config.js')
+var _ = require('underscore-node')
 
 var UserService = {
 
@@ -38,13 +39,27 @@ var UserService = {
 
 	},
 
-	create: function (newUser, callback) {
-		
-		User.find({email: newUser.email}, function (err, user) {
-			if (err) console.log(err);
+	create: function (deviceId, newUser, callback) {
+		User.find({deviceId: deviceId}, function (err, user) {
+			if (err){
+				console.log(err);
+				callback(err);	
+			} 
 			var user = user[0];
 			if(user){
-				callback(err, {success: false, data: 'email account already exists'})
+				mUser.gender = newUser.gender;
+				mUser.age = newUser.age;
+				mUser.skillLevel = newUser.skillLevel;
+				mUser.bodyweight = newUser.bodyweight;
+
+				var token = jwt.sign(user._id, config.secret+mUser._id, {
+		          expiresIn: (60*2) // expires in 24 hours
+		        });
+
+				mUser.save(function(err, result) {
+					if(err) console.log(err);
+					callback(err, {success: true, data: result, token: token})
+				})
 			} else {
 				var user = new User(newUser)
 
@@ -62,6 +77,26 @@ var UserService = {
 			}
 		})
 	},
+
+	updateInfo: function(deviceId, userInfo, callback) {
+		User.find({deviceId:deviceId}, function(err, result){
+			if(err){
+				console.log(err);
+				callback(err)
+			}
+			mUser = result[0];
+			console.log('results ',result)
+			mUser.gender = userInfo.gender;
+			mUser.age = userInfo.age;
+			mUser.skillLevel = userInfo.skillLevel;
+			mUser.bodyweight = userInfo.bodyweight;
+
+			mUser.save(function(err, result) {
+				if(err) console.log(err);
+				callback(err, {success: true, data: result})
+			})
+		})
+	}
 
 
 }

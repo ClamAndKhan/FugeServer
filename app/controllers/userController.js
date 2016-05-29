@@ -14,7 +14,8 @@ var UserController = {
 
 	create: function(req, res, next) {
 		console.log('req.body',req.body)
-		UserService.create(req.body, function(err, resData) {
+		var deviceId = req.body.deviceId;
+		UserService.create(deviceId, req.body, function(err, resData) {
 			if(err){
 				console.log('could not create user', err)
 				res.send(err);
@@ -34,18 +35,24 @@ var UserController = {
 
 	},
 
-	createAddress: function (req, res, next) {
-		var userId = req.headers.userid
-		var authToken = req.headers.authorization
-
-		UserService.createAddress(userId, authToken, req.body, function (err, addressInfo) {
+	updateInfo: function (req, res, next) {
+		console.log('updateing info')
+		console.log(req.body.bodyweight)
+		var deviceId = req.body.deviceId
+		var userInfo = {
+			skillLevel: req.body.skillLevel,
+			age: req.body.age,
+			gender: req.body.gender,
+			bodyweight: req.body.bodyweight
+		}
+		UserService.updateInfo(deviceId, userInfo, function(err, resData) {
 			if(err){
-				console.log('could not create new address', err)
+				console.log('could not update user info', err)
 				res.send(err);
 			}
-			res.json(addressInfo)
+			res.json(resData);
 		})
-	},
+	}
 
 };
 

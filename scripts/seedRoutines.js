@@ -12,37 +12,57 @@ var routines 	= require('../app/models/seed_JSON/routines.js');
 var workouts 	= require('../app/models/seed_JSON/workouts.js');
 var exercises 	= require('../app/models/seed_JSON/exercises.js');
 
-async.each(routines, createRoutine, function (err, results) {
-	if(err){
-		console.log(err);
-		process.exit(1);
-	}
-	console.log('Routines added!')
+deleteCollections(['routines','workouts','exercises'], function () {
+	console.log('Collections deleted!')
+	async.parallel([
+		function(callback){
+			async.each(routines,createRoutine,function(){
+				callback()	
+			})
+		},
+		function(callback){
+			async.each(workouts,createWorkout, function(){
+				callback()
+			})
+		},
+		function(callback){
+			async.each(exercises,createExercise, function(){
+				callback()
+			})
+		}
+	], function () {
+		console.log('Database seeded successfully!')
+		process.exit(1)
+	})
 })
 
-async.each(workouts, createWorkout, function (err, results) {
-	if(err){
-		console.log(err);
-		process.exit(1);
-	}
-	console.log('Workouts added!')
-})
 
-async.each(exercises, createExercise, function (err, results) {
-	if(err){
-		console.log(err);
-		process.exit(1);
-	}
-	console.log('Exercises added!')
-	process.exit(0);
-})
+//HELPERS //
+function deleteCollections(collectionNames, callback){
+	mongoose.connection.on('open', function(){
+		async.each(collectionNames, deleteCollection, function(){
+			callback()
+		})
+	})
+}
 
-// HELPERS //
+function deleteCollection (collectionName, callback) {
+	mongoose.connection.db.dropCollection(collectionName, function(err, result) {
+		if(err){
+			console.log('error',err);
+			process.exit(0);
+		}
+		console.log('deleted '+collectionName+' collection...')
+		callback()
+	});
+}
+
 function createRoutine (routine, callback){
 	var model = new Routine(routine)
 	model.save(function(err, newRoutine) {
 		if(err){
-			callback(err)
+			console.log(err)
+			process.exit(0)
 		}
 		console.log(newRoutine.routineName,': Routine created sucessfully');
 		callback(null, true);
@@ -53,9 +73,10 @@ function createWorkout (workout, callback){
 	var model = new Workout(workout)
 	model.save(function(err, newWorkout) {
 		if(err){
-			callback(err)
+			console.log(err)
+			process.exit(0)
 		}
-		console.log(newWorkout.workoutName,': Routine created sucessfully');
+		console.log(newWorkout.workoutName,': Workout created sucessfully');
 		callback(null, true);
 	})
 }
@@ -64,7 +85,8 @@ function createExercise (exercise, callback){
 	var model = new Exercise(exercise)
 	model.save(function(err, newExercise) {
 		if(err){
-			callback(err)
+			console.log(err)
+			process.exit(0)
 		}
 		console.log(newExercise.exerciseName,': Exercise created sucessfully');
 		callback(null, true);

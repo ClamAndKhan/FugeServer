@@ -119,7 +119,115 @@ var workouts = [
 	    		]
 	    	},
 	    ]
+	},
+	{
+	    workoutName: "The 5x5 Program_2",
+	    muscleGroups: [],
+	    exercises: [
+	    	{
+	    		exerciseName: CNST.FRONT_BARBELL_SQUAT,
+	    		sets: [
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,3)
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,4)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_BARBELL_MILITARY_PRESS,
+	    		sets: [
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,3)
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,4)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.BARBELL_DEADLIFT,
+	    		sets: [
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,3)
+	    			},
+	    			{
+	    				reps: 5,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,4)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.BARBELL_CURL,
+	    		sets: [
+	    			{
+	    				reps: 8,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 8,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_TRICEPS_PRESS,
+	    		sets: [
+	    			{
+	    				reps: 8,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 8,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			}
+	    		]
+	    	}
+	    ]
 	}
+
 
 ]
 
