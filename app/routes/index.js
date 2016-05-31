@@ -1,7 +1,7 @@
 var Routes = {}
 
 var Users = require('./user.js')
-var Routines = require('./routines.js')
+var Routines = require('./routine.js')
 
 module.exports = function(app,router){ 
   //Adds routes to the express router

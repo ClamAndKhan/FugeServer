@@ -7,22 +7,14 @@ module.exports = function(app,router) {
   //////////////////////////////////////////////
 
   router.route('/users/create')
-  	.post(UserCtrl.create)
+  	.post(
+      mdw.validate('users_create'), 
+      UserCtrl.create)
 
   router.route('/users/updateInfo')
     .post(UserCtrl.updateInfo)
 
   router.route('/users/login') 
   	.post(UserCtrl.login)
-
-  // router.route('/user/search/:name')          
-  // 	.get(UserCtrl.findByName)
-
-  router.route('/users')
-  	.get(mdw.authenticate, UserCtrl.findAll)
-
-  // router.route('/user/address')
-  // 	.post(UserCtrl.createAddress)
-  // 	.get(mdw.authenticate, UserCtrl.getAddress)
 
 }

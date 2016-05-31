@@ -17,5 +17,7 @@ var routes = require('./app/routes/')(app, router)
 var port = process.env.PORT || 8080;
 
 // START THE SERVER
-app.listen(port);
-console.log('Listening on port: ' + port);
+
+app.listen(port, function () {
+	console.log('Listening on port: ' + port+ '...');
+})

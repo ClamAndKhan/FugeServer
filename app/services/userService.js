@@ -30,7 +30,7 @@ var UserService = {
 					//If their password is correct
 					//create token
 					var token = jwt.sign(mUser._id, config.secret+mUser._id, {
-			          expiresIn: (60*2) // expires in 24 hours
+			          expiresIn: (60*60*2) // expires in 2 hours
 			        });
 			        callback(err, {success: true, data: mUser, token: token})
 				}
@@ -39,27 +39,15 @@ var UserService = {
 
 	},
 
-	create: function (deviceId, newUser, callback) {
-		User.find({deviceId: deviceId}, function (err, user) {
+	create: function (newUser, callback) {
+		User.find({email: newUser.email}, function (err, user) {
 			if (err){
 				console.log(err);
 				callback(err);	
 			} 
 			var user = user[0];
 			if(user){
-				mUser.gender = newUser.gender;
-				mUser.age = newUser.age;
-				mUser.skillLevel = newUser.skillLevel;
-				mUser.bodyweight = newUser.bodyweight;
-
-				var token = jwt.sign(user._id, config.secret+mUser._id, {
-		          expiresIn: (60*2) // expires in 24 hours
-		        });
-
-				mUser.save(function(err, result) {
-					if(err) console.log(err);
-					callback(err, {success: true, data: result, token: token})
-				})
+				callback(err, {success: false, data: 'email already exists'})
 			} else {
 				var user = new User(newUser)
 
@@ -72,7 +60,7 @@ var UserService = {
 			          expiresIn: (60*2) // expires in 24 hours
 			        });
 
-					callback(err, {success: true, data: mUser, token: token})
+					callback(err, {success: true, data: {userId:mUser._id}, token: token})
 				})
 			}
 		})

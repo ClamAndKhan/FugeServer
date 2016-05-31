@@ -34,7 +34,12 @@ var constants = {
 	SITUPS: "Sit-ups",
 	SITUPS_WEIGHT: 0,
 
-	FIVE_PERCENT_MULTIPLIER: 1.05
+	FIVE_PERCENT_MULTIPLIER: 1.05,
+
+	STRING: 'string',
+	NUMBER: 'number',
+	OBJECT: 'object',
+	BOOL: 'bool'
 
 }
 

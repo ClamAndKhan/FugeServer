@@ -14,8 +14,7 @@ var UserController = {
 
 	create: function(req, res, next) {
 		console.log('req.body',req.body)
-		var deviceId = req.body.deviceId;
-		UserService.create(deviceId, req.body, function(err, resData) {
+		UserService.create(req.body, function(err, resData) {
 			if(err){
 				console.log('could not create user', err)
 				res.send(err);

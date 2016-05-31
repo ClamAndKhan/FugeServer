@@ -1,6 +1,9 @@
-var config = require.main.require('./config.js')
-// var jwt = require('../../components/auth.js').jwt
-var jwt = require('jsonwebtoken');
+var Validation  = require('./validation.js')
+var config      = require.main.require('./config.js')
+var jwt         = require('jsonwebtoken');
+var _           = require('underscore-node')
+
+var _routeValidations = {};
 
 var middleware = {
   authenticate: function (req, res, next) {
@@ -32,7 +35,46 @@ var middleware = {
       });
       
     }
+  },
+
+  validate: function (routeName) {
+    return function(req, res, next) {
+      console.log('validating!')
+      var body = req.body;
+      var validated = _validateRequest(routeName, body)
+      console.log('validated:',validated)
+      if (!validated.success) {
+        res.status(400).json({
+          success: false,
+          message: validated.message
+        })
+      }
+      else next();
+    }
   }
+}
+
+function _validateRequest (routeName, body) {
+  var params =  Validation[routeName];
+  var result = {success:true}
+  console.log(body)
+  _.each(params, function(value, key) {
+    // If required param is missing
+    if( value.required && !body[key] ) {
+      return result = {success:false, message: 'request is missing required field: ' + key};
+    } else {
+
+      // If param type is wrong
+      if( value.type !== typeof(body[key]) ) {
+        return result = {success:false, message: key+' field must be a '+value.type};
+      }
+
+    }
+
+  })
+  console.log('this shouldnt be seen')
+  return result;
+
 }
 
 module.exports = middleware
