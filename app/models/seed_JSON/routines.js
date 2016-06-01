@@ -20,6 +20,17 @@ var routines = [
 	    workoutNames: ["German Volume Training_1","German Volume Training_2", "German Volume Training_3"],
 	    picUrl: "",
 	    sourceUrl:"http://www.bodybuilding.com/fun/5-best-bodybuilding-programs.htm"
+	},
+	{
+	    routineName: "FST-7",
+	    description: "The FST-7 name stands for Fascial Stretch Training, which indicates that one of the primary objectives this program attempts to achieve is to stretch the fascia tissue, which is the soft connective tissue that is found surrounding your muscles as well as throughout the rest of the body. When this tissue is stretched you will see increases in muscle growth. There will be a higher deliverance of minerals, amino acids and oxygen to the tissues. With this set-up, perform seven sets of 15 reps for the last exercise you do for each muscle group. It's important to keep your rest periods between these sets shorter - right around 30 seconds total.",
+	    routineType: "Volume",
+	    difficulty: "intermediate",
+	    numberOfWorkouts: 5,
+	    daysPerWeek: 5,
+	    workoutNames: ["FST-7_1","FST-7_2", "FST-7_3","FST-7_4", "FST-7_5"],
+	    picUrl: "",
+	    sourceUrl:"http://www.bodybuilding.com/fun/5-best-bodybuilding-programs.htm"
 	}
 
 ]

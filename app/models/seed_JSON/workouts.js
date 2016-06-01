@@ -565,7 +565,702 @@ var workouts = [
 	    		]
 	    	}
 	    ]
+	},
+	{
+	    workoutName: "FST-7_1",
+	    muscleGroups: [],
+	    exercises: [
+	    	{
+	    		exerciseName: CNST.BARBELL_CURL,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.HAMMER_CURLS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.STANDING_BICEPS_CABLE_CURL,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.CLOSE_GRIP_BARBELL_BENCH_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_TRICEPS_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.CABLE_ROPE_OVERHEAD_TRICEPS_EXTENSION,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_CALF_RAISE,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.STANDING_CALF_RAISE,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	}
+	    ]
+	},
+	{
+	    workoutName: "FST-7_2",
+	    muscleGroups: [],
+	    exercises: [
+	    	{
+	    		exerciseName: CNST.BARBELL_SQUAT,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.LEG_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.LEG_EXTENSIONS,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	}
+	    ]
+	},
+	{
+	    workoutName: "FST-7_3",
+	    muscleGroups: [],
+	    exercises: [
+	    	{
+	    		exerciseName: CNST.DUMBBELL_BENCH_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.INCLINE_DUMBBELL_BENCH_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.CABLE_CROSSOVER,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.CLOSE_GRIP_BARBELL_BENCH_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_TRICEPS_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.CABLE_ROPE_OVERHEAD_TRICEPS_EXTENSION,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	}
+	    ]
+	},
+	{
+	    workoutName: "FST-7_4",
+	    muscleGroups: [],
+	    exercises: [
+	    	{
+	    		exerciseName: CNST.BENT_OVER_BARBELL_ROW,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.WIDE_GRIP_LAT_PULLDOWN,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_CABLE_ROW,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.STANDING_CALF_RAISE,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SEATED_CALF_RAISE,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	}
+	    ]
+	},
+	{
+	    workoutName: "FST-7_5",
+	    muscleGroups: [],
+	    exercises: [
+	    	{
+	    		exerciseName: CNST.DUMBBELL_SHOULDER_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.FRONT_DUMBBELL_RAISE,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.SIDE_LATERAL_RAISE,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.BARBELL_CURL,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.INCLINE_DUMBBELL_BENCH_PRESS,
+	    		percentOfMax: 0.7,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: CNST.FIVE_PERCENT_MULTIPLIER
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: Math.pow(CNST.FIVE_PERCENT_MULTIPLIER,2)
+	    			}
+	    		]
+	    	},
+	    	{
+	    		exerciseName: CNST.STANDING_BICEPS_CABLE_CURL,
+	    		percentOfMax: 0.5,
+	    		sets: [
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			},
+	    			{
+	    				reps: 10,
+	    				weightMultiplier: 1
+	    			}
+	    		]
+	    	}
+	    ]
 	}
+
 
 
 ]

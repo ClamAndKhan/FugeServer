@@ -152,6 +152,118 @@ var exercises = [
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/38641m.mp4",
 		picUrl: "https://www.gymwolf.com/images/exercises/1189_1.jpg"
+	},
+	{
+		exerciseName: CNST.HAMMER_CURLS,
+		muscleGroups: [],
+		baseWeight: CNST.HAMMER_CURLS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40021m.mp4",
+		picUrl: "http://3.bp.blogspot.com/-dKT5nC5cs_I/UQJVDR17DBI/AAAAAAAAAFo/EixudfqrVK4/s1600/hammer-curl-2.png"
+	},
+	{
+		exerciseName: CNST.STANDING_BICEPS_CABLE_CURL,
+		muscleGroups: [],
+		baseWeight: CNST.STANDING_BICEPS_CABLE_CURL_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/41781m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/standing-biceps-curl-2.gif"
+	},
+	{
+		exerciseName: CNST.CLOSE_GRIP_BARBELL_BENCH_PRESS,
+		muscleGroups: [],
+		baseWeight: CNST.CLOSE_GRIP_BARBELL_BENCH_PRESS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/58000/59071m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/standing-biceps-curl-2.gif"
+	},
+	{
+		exerciseName: CNST.CABLE_ROPE_OVERHEAD_TRICEPS_EXTENSION,
+		muscleGroups: [],
+		baseWeight: CNST.CABLE_ROPE_OVERHEAD_TRICEPS_EXTENSION_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/38671m.mp4",
+		picUrl: "http://www.gymbook.ru/images/img/standing-triceps-extension-2.gif"
+	},
+	{
+		exerciseName: CNST.LEG_PRESS,
+		muscleGroups: [],
+		baseWeight: CNST.LEG_PRESS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40571m.mp4",
+		picUrl: "https://bretcontreras.com/wp-content/uploads/Leg-press-machine-diagram-top.png"
+	},
+	{
+		exerciseName: CNST.LEG_EXTENSIONS,
+		muscleGroups: [],
+		baseWeight: CNST.LEG_EXTENSIONS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40541m.mp4",
+		picUrl: "https://upload.wikimedia.org/wikipedia/commons/5/58/Leg-extensions-2-672x1024.png"
+	},
+	{
+		exerciseName: CNST.INCLINE_DUMBBELL_BENCH_PRESS,
+		muscleGroups: [],
+		baseWeight: CNST.INCLINE_DUMBBELL_BENCH_PRESS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40301m.mp4",
+		picUrl: "http://musclebuildingprograms.org/wp-images/dumbbell-chest-press.jpg"
+	},
+	{
+		exerciseName: CNST.CABLE_CROSSOVER,
+		muscleGroups: [],
+		baseWeight: CNST.CABLE_CROSSOVER_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/38561m.mp4",
+		picUrl: "http://munfitnessblog.com/wp-content/uploads/2011/09/Cartoon-Cable-Crossover.jpg"
+	},
+	{
+		exerciseName: CNST.WIDE_GRIP_LAT_PULLDOWN,
+		muscleGroups: [],
+		baseWeight: CNST.WIDE_GRIP_LAT_PULLDOWN_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/41441m.mp4",
+		picUrl: "https://www.gymwolf.com/images/exercises/1248_0.jpg"
+	},
+	{
+		exerciseName: CNST.SEATED_CABLE_ROW,
+		muscleGroups: [],
+		baseWeight: CNST.SEATED_CABLE_ROW_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40231m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/cable-seated-rows-1.png"
+	},
+	{
+		exerciseName: CNST.DUMBBELL_SHOULDER_PRESS,
+		muscleGroups: [],
+		baseWeight: CNST.DUMBBELL_SHOULDER_PRESS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/39131m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/dumbbell-shoulder-press-1.png"
+	},
+	{
+		exerciseName: CNST.FRONT_DUMBBELL_RAISE,
+		muscleGroups: [],
+		baseWeight: CNST.FRONT_DUMBBELL_RAISE_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/39911m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/dumbbell-front-raises-2-1.png"
+	},
+	{
+		exerciseName: CNST.SIDE_LATERAL_RAISE,
+		muscleGroups: [],
+		baseWeight: CNST.SIDE_LATERAL_RAISE_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/41051m.mp4",
+		picUrl: "http://lovemymuscles.com/wp-content/uploads/2012/06/lateral-rases.jpg"
+	},
+	{
+		exerciseName: CNST.INCLINE_DUMBBELL_CURL,
+		muscleGroups: [],
+		baseWeight: CNST.INCLINE_DUMBBELL_CURL_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40241m.mp4",
+		picUrl: "http://www.freeworkoutlog.com/images/exercises/1146-1_275x275.png"
 	}
 
 

@@ -47,14 +47,23 @@ function deleteCollections(collectionNames, callback){
 }
 
 function deleteCollection (collectionName, callback) {
-	mongoose.connection.db.dropCollection(collectionName, function(err, result) {
-		if(err){
-			console.log('error',err);
-			process.exit(0);
-		}
-		console.log('deleted '+collectionName+' collection...')
-		callback()
-	});
+	mongoose.connection.db.listCollections({name: collectionName})
+	    .next(function(err, collExists) {
+	        if (collExists) {
+	            // Delete collection
+				mongoose.connection.db.dropCollection(collectionName, function(err, result) {
+					if(err){
+						console.log('error',err);
+						process.exit(0);
+					}
+					console.log('deleted '+collectionName+' collection...')
+					callback()
+				});
+	        } else {
+	        	callback();
+	        }
+    	});
+
 }
 
 function createRoutine (routine, callback){
@@ -73,6 +82,7 @@ function createWorkout (workout, callback){
 	var model = new Workout(workout)
 	model.save(function(err, newWorkout) {
 		if(err){
+			console.log('Could not add Workout: ',model)
 			console.log(err)
 			process.exit(0)
 		}
@@ -85,6 +95,7 @@ function createExercise (exercise, callback){
 	var model = new Exercise(exercise)
 	model.save(function(err, newExercise) {
 		if(err){
+			console.log('could not add workout: ',model)
 			console.log(err)
 			process.exit(0)
 		}
