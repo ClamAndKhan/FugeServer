@@ -6,6 +6,7 @@ var WorkoutSchema   = new Schema({
     muscleGroups: {type:[String]},
     exercises: [{
     	exerciseName: { type: String, required: true },
+    	percentOfMax: {type: Number, required: true},
     	sets: {type: []}
     }]
 });

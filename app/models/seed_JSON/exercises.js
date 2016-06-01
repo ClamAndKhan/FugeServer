@@ -88,6 +88,72 @@ var exercises = [
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40931m.mp4",
 		picUrl: "https://www.gymwolf.com/images/exercises/1162_1.jpg"
+	},
+	{
+		exerciseName: CNST.DUMBBELL_BENCH_PRESS,
+		muscleGroups: [],
+		baseWeight: CNST.DUMBBELL_BENCH_PRESS_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/39001m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/decline-dumbbell-bench-press-2.png"
+	},
+	{
+		exerciseName: CNST.BUTTERFLY,
+		muscleGroups: [],
+		baseWeight: CNST.BUTTERFLY_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/38551m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/butterfly-machine-1.png"
+	},
+	{
+		exerciseName: CNST.INCLINE_BENCH_PULL,
+		muscleGroups: [],
+		baseWeight: CNST.INCLINE_BENCH_PULL_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40191m.mp4",
+		picUrl: "http://mblogthumb2.phinf.naver.net/20121127_5/y2kyoyo1_1353943278218BtlIO_PNG/Incline_Bench_Pull1.png?type=w2"
+	},
+	{
+		exerciseName: CNST.STANDING_CALF_RAISE,
+		muscleGroups: [],
+		baseWeight: CNST.STANDING_CALF_RAISE_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/41821m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/standing-calf-raises-1.gif"
+	},
+	{
+		exerciseName: CNST.SEATED_CALF_RAISE,
+		muscleGroups: [],
+		baseWeight: CNST.SEATED_CALF_RAISE_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40201m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/seated-calf-raise-2-2.gif"
+	},
+	{
+		exerciseName: CNST.HANGING_LEG_RAISE,
+		muscleGroups: [],
+		baseWeight: CNST.HANGING_LEG_RAISE_WEIGHT,
+		bodyWeight: true,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40201m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/seated-calf-raise-2-2.gif"
+	},
+	{
+		exerciseName: CNST.DUMBBELL_BICEP_CURL,
+		muscleGroups: [],
+		baseWeight: CNST.DUMBBELL_BICEP_CURL_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/39011m.mp4",
+		picUrl: "http://www.workoutroutinewarehouse.com/images/biceps-curl-2.gif"
+	},
+	{
+		exerciseName: CNST.CABLE_LYING_TRICEPS_EXTENSION,
+		muscleGroups: [],
+		baseWeight: CNST.CABLE_LYING_TRICEPS_EXTENSION_WEIGHT,
+		bodyWeight: false,
+		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/38641m.mp4",
+		picUrl: "https://www.gymwolf.com/images/exercises/1189_1.jpg"
 	}
+
+
 ]
 module.exports = exercises

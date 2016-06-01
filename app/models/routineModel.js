@@ -3,6 +3,7 @@ var Schema       	= mongoose.Schema;
 
 var RoutineSchema   = new Schema({
     routineName: { type: String, required: true },
+    description: {type: String},
     routineType: {type: String},
     difficulty: { type: String, required: true },
     numberOfWorkouts: { type: Number, required: true },
