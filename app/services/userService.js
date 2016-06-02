@@ -57,7 +57,7 @@ var UserService = {
 
 					//create token
 					var token = jwt.sign(user._id, config.secret+mUser._id, {
-			          expiresIn: (60*2) // expires in 24 hours
+			          expiresIn: (60*60*2) // expires in 24 hours
 			        });
 
 					callback(err, {success: true, data: {userId:mUser._id}, token: token})

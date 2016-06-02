@@ -28,7 +28,7 @@ var RoutineService = {
 			});
 
 		})
-	}
+	},
 
 }
 

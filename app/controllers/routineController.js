@@ -9,10 +9,9 @@ var RoutineController = {
 				res.send(err);
 			}
 			res.send(routines)
-
 		})
 	
-	}
+	},
 
 };
 

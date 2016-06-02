@@ -9,6 +9,13 @@ var Validation = {
 		gender: {required: false, type: CNST.STRING},
 		skillLevel: {required: false, type: CNST.STRING},
 		age: {required: false, type: CNST.STRING}
+	},
+	workout_logWorkout: {
+		workoutId: { required: true, type: CNST.STRING },
+		userId: { required: true, type: CNST.STRING },
+		startTime: { required: true, type: CNST.STRING },
+		endTime: { required: true, type: CNST.STRING },
+		exerciseLog: {required: true, type: CNST.STRING}
 	}
 }
 
