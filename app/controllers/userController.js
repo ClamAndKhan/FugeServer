@@ -1,4 +1,9 @@
 var UserService = require('../services/userService.js')
+var MailService = require('../externalServices/mailService.js')
+var path = require('path');
+
+console.log(MailService)
+var fs = require('fs')
 
 var UserController = {
 
@@ -10,6 +15,26 @@ var UserController = {
 			}
 			res.json(resData)
 		})
+	},
+
+	signupBeta: function (req, res, next) {
+
+		fs.readFile(path.join(__dirname,'../externalServices/mailTemplates/betaSignup.html'), function read(err, data) {
+		    if (err) {
+		        throw err;
+		    }
+		    var emailTemplate = data;
+
+			MailService.sendEmail(emailTemplate,"Fuge Beta: You're invited", req.email, function(err, response) {
+				if(err){
+					console.log('error!', err);
+					res.send(err);
+				}
+				res.json(response);
+			})
+		});
+
+
 	},
 
 	create: function(req, res, next) {
