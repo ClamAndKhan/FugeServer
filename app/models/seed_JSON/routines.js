@@ -7,7 +7,7 @@ var routines = [
 	    numberOfWorkouts: 2,
 	    daysPerWeek: 3,
 	    workoutNames: ["The 5x5 Program_1","The 5x5 Program_2"],
-	    picUrl: "",
+	    picUrl: "http://thumb9.shutterstock.com/display_pic_with_logo/59783/245915032/stock-photo-weight-lifter-at-the-bench-press-lifting-a-barbell-on-an-incline-bench-245915032.jpg",
 	    sourceUrl:"http://www.bodybuilding.com/fun/5-best-bodybuilding-programs.htm"
 	},
 	{
@@ -18,7 +18,7 @@ var routines = [
 	    numberOfWorkouts: 3,
 	    daysPerWeek: 3,
 	    workoutNames: ["German Volume Training_1","German Volume Training_2", "German Volume Training_3"],
-	    picUrl: "",
+	    picUrl: "http://thumb1.shutterstock.com/display_pic_with_logo/1623779/145677050/stock-photo-bodybuilder-doing-heavy-weight-exercise-for-biceps-with-dumbbell-145677050.jpg",
 	    sourceUrl:"http://www.bodybuilding.com/fun/5-best-bodybuilding-programs.htm"
 	},
 	{
@@ -29,7 +29,7 @@ var routines = [
 	    numberOfWorkouts: 5,
 	    daysPerWeek: 5,
 	    workoutNames: ["FST-7_1","FST-7_2", "FST-7_3","FST-7_4", "FST-7_5"],
-	    picUrl: "",
+	    picUrl: "http://thumb7.shutterstock.com/display_pic_with_logo/2957026/272789135/stock-photo-body-builder-performing-exercise-for-biceps-with-weights-in-both-hands-272789135.jpg",
 	    sourceUrl:"http://www.bodybuilding.com/fun/5-best-bodybuilding-programs.htm"
 	}
 
