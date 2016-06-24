@@ -4,6 +4,8 @@ var Exercise 	= require('../app/models/exerciseModel.js');
 var config		= require('../config.js');
 var mongoose 	= require("mongoose");
 var async		= require('async');
+var vibrant		= require('node-vibrant');
+var parse		= require('parse-color');
 require('../constant.js')
 
 mongoose.connect(config.database);
@@ -93,13 +95,23 @@ function createWorkout (workout, callback){
 
 function createExercise (exercise, callback){
 	var model = new Exercise(exercise)
-	model.save(function(err, newExercise) {
+	vibrant.from(model.picUrl[0]).getPalette(function (err, res) {
 		if(err){
+			console.log('error ',err)
 			console.log('could not add workout: ',model)
 			console.log(err)
 			process.exit(0)
 		}
-		console.log(newExercise.exerciseName,': Exercise created sucessfully');
-		callback(null, true);
+		//Add the hue and hex
+		console.log(parse('hsl(210,50,50)'))
+		model.save(function(err, newExercise) {
+			if(err){
+				console.log('could not add workout: ',model)
+				console.log(err)
+				process.exit(0)
+			}
+			console.log(newExercise.exerciseName,': Exercise created sucessfully');
+			callback(null, true);
+		})
 	})
 }
