@@ -35,6 +35,7 @@
 
     <!-- Modernizr Scripts -->
     <script src="javascript/vendor/modernizr-2.7.1.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
     <script type="text/javascript">
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
       analytics.load("4txshy8l73");
@@ -44,6 +45,25 @@
       })
       analytics.track('this works')
       }}();
+
+      // $("#signup").click(function(){
+      //     console.log('heyy')
+      //     var email = $("#InputEmail").value
+      //     $.post("/api/users/email/beta", function(email, status){
+      //         alert("Data: " + data + "\nStatus: " + status);
+      //     });
+      // });
+      $(document).ready(function() {
+        $('form').on('submit', function(e){
+          e.preventDefault();
+          console.log($('#InputEmail').val())
+          var data = {email:$('#InputEmail').val()}
+          $.post('/api/users/email/beta', data, function(data, status){
+            console.log('response: ',status)
+            $('#InputEmail').val('Thanks!')
+          })
+        });
+      });
     </script>
   </head>
   <body class="index" id="to-top">
@@ -96,17 +116,17 @@
             <br>
             <h3 style="color:white">Sign up for our beta:</h3>
             <!-- Subscribe form -->
-            <form style="padding-top:0px" class="subscribe-form form-inline" action="./index.html" role="form">
+            <form style="padding-top:0px" class="subscribe-form form-inline" role="form">
               <!-- Input -->
               <div class="form-group">
 
                 <label class="sr-only" for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email address">
+                <input type="email" class="form-control" id="InputEmail" placeholder="Enter email address">
 
               </div> <!-- /.form-group -->
 
               <!-- Button -->
-              <button class="btn btn-success" type="submit">Subscribe</button>
+              <button id="signup" class="btn btn-success" type="submit">Subscribe</button>
               
             </form> 
             <!-- /.subscribe-form -->
