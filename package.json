@@ -12,10 +12,15 @@
     "https": "^1.0.0",
     "iconv-lite": "^0.4.13",
     "jsonwebtoken": "^5.7.0",
+    "mandrill-api": "^1.0.45",
     "mongoose": "~4.4.4",
     "morgan": "^1.7.0",
+    "node-mandrill": "^1.0.1",
+    "node-vibrant": "^2.1.2",
     "nodemailer": "^2.4.2",
+    "parse-color": "^1.0.0",
     "request": "^2.69.0",
+    "underscore": "^1.8.3",
     "underscore-node": "^0.1.2"
   }
 }

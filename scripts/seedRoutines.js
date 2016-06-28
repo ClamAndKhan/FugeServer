@@ -6,6 +6,8 @@ var mongoose 	= require("mongoose");
 var async		= require('async');
 var vibrant		= require('node-vibrant');
 var parse		= require('parse-color');
+var _			= require('underscore');
+
 require('../constant.js')
 
 mongoose.connect(config.database);
@@ -69,14 +71,16 @@ function deleteCollection (collectionName, callback) {
 }
 
 function createRoutine (routine, callback){
-	var model = new Routine(routine)
-	model.save(function(err, newRoutine) {
-		if(err){
-			console.log(err)
-			process.exit(0)
-		}
-		console.log(newRoutine.routineName,': Routine created sucessfully');
-		callback(null, true);
+	addColorData(routine, function saveExercise(routineWithColorData) {
+		var model = new Routine(routineWithColorData)
+		model.save(function(err, newRoutine) {
+			if(err){
+				console.log('could not save routine: ',err)
+				process.exit(0)
+			}
+			console.log(newRoutine.routineName,': Routine created sucessfully');
+			callback(null, true);
+		})
 	})
 }
 
@@ -94,16 +98,8 @@ function createWorkout (workout, callback){
 }
 
 function createExercise (exercise, callback){
-	var model = new Exercise(exercise)
-	vibrant.from(model.picUrl[0]).getPalette(function (err, res) {
-		if(err){
-			console.log('error ',err)
-			console.log('could not add workout: ',model)
-			console.log(err)
-			process.exit(0)
-		}
-		//Add the hue and hex
-		console.log(parse('hsl(210,50,50)'))
+	addColorData(exercise, function saveExercise(exerciseWithColorData) {
+		var model = new Exercise(exerciseWithColorData)
 		model.save(function(err, newExercise) {
 			if(err){
 				console.log('could not add workout: ',model)
@@ -113,5 +109,30 @@ function createExercise (exercise, callback){
 			console.log(newExercise.exerciseName,': Exercise created sucessfully');
 			callback(null, true);
 		})
+	})
+}
+
+function addColorData (obj, cb) {
+	vibrant.from(obj.picUrl).getPalette(function(err, res) {
+		if(err){
+			console.log('error ',err)
+			console.log('could not add workout: ',model)
+			console.log(err)
+			process.exit(0)
+		}
+		//Add the hue and hex
+		var colorData = {};
+		_.each(res,function(colorType, key){
+			if(colorType){
+				var parsedColorData = parse('hsl('+Math.round(colorType.hsl[0]*360)+','+Math.round(colorType.hsl[0]*360)+','+Math.round(colorType.hsl[0]*360)+')')
+				colorData[key] = {
+					hex: parsedColorData.hex,
+					hue: parsedColorData.hsl[0]
+				}
+			}
+		})
+		console.log('colorData: ',colorData)
+		obj.colorData = colorData;
+		cb(obj)
 	})
 }

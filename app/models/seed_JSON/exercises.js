@@ -63,7 +63,7 @@ var exercises = [
 		baseWeight: CNST.SEATED_BARBELL_MILITARY_PRESS_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/54000/54081m.mp4",
-		picUrl: "http://www.123rf.com/search.php?word=shoulder+press&start=100&t_word=&t_lang=en&imgtype=0&oriSearch=military%20press&searchopts=&itemsperpage=100&sti=mzg1kav9iz29d4pxxq|&mediapopup=16168180"
+		picUrl: "http://previews.123rf.com/images/fotomircea/fotomircea1211/fotomircea121100009/16168180-artistic-shot-black-and-white-of-a-young-bodybuilder-hard-training-in-the-gym-dumbbell-shoulder-pres-Stock-Photo.jpg"
 	},
 	{
 		exerciseName: CNST.BARBELL_DEADLIFT,
@@ -111,7 +111,7 @@ var exercises = [
 		baseWeight: CNST.INCLINE_BENCH_PULL_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40191m.mp4",
-		picUrl: "http://www.123rf.com/search.php?word=bent+over+barbell+row&imgtype=0&t_word=&t_lang=en&oriSearch=barbbell+row&sti=m3xwes374dxex9twwt|&mediapopup=22602181"
+		picUrl: "http://previews.123rf.com/images/jalephoto/jalephoto1310/jalephoto131000022/22602181-Bent-Over-Barbell-Row-Stock-Photo.jpg"
 	},
 	{
 		exerciseName: CNST.STANDING_CALF_RAISE,
@@ -119,7 +119,7 @@ var exercises = [
 		baseWeight: CNST.STANDING_CALF_RAISE_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/41821m.mp4",
-		picUrl: "http://www.shutterstock.com/cat.mhtml?lang=en&language=en&ref_site=photo&search_source=search_form&version=llv1&anyorall=all&safesearch=1&use_local_boost=1&autocomplete_id=&search_tracking_id=TdT_mEjm_4o66gZTijENQg&searchterm=calf%20raise&show_color_wheel=1&orient=&commercial_ok=&media_type=images&search_cat=&searchtermx=&photographer_name=&people_gender=&people_age=&people_ethnicity=&people_number=&color=&page=1&inline=337155155"
+		picUrl: "http://thumb7.shutterstock.com/display_pic_with_logo/73285/337155155/stock-photo-young-man-shows-finishing-position-of-standing-dumbbell-calf-raise-with-dumbbels-workout-isolated-337155155.jpg"
 	},
 	{
 		exerciseName: CNST.SEATED_CALF_RAISE,
@@ -143,7 +143,7 @@ var exercises = [
 		baseWeight: CNST.DUMBBELL_BICEP_CURL_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/39011m.mp4",
-		picUrl: "http://www.shutterstock.com/cat.mhtml?lang=en&language=en&ref_site=photo&search_source=search_form&version=llv1&anyorall=all&safesearch=1&use_local_boost=1&autocomplete_id=&search_tracking_id=dIkgg5SULHkKa1CySbiwww&searchterm=bicep%20curl&show_color_wheel=1&orient=&commercial_ok=&media_type=images&search_cat=&searchtermx=&photographer_name=&people_gender=&people_age=&people_ethnicity=&people_number=&color=&page=1&inline=234100963"
+		picUrl: "http://thumb7.shutterstock.com/display_pic_with_logo/61398/61398,1295193332,5/stock-photo-young-bodybuilder-training-in-the-gym-standing-biceps-cable-curl-69079705.jpg"
 	},
 	{
 		exerciseName: CNST.CABLE_LYING_TRICEPS_EXTENSION,
@@ -151,7 +151,7 @@ var exercises = [
 		baseWeight: CNST.CABLE_LYING_TRICEPS_EXTENSION_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/38000/38641m.mp4",
-		picUrl: "http://www.shutterstock.com/cat.mhtml?lang=en&language=en&ref_site=photo&search_source=search_form&version=llv1&anyorall=all&safesearch=1&use_local_boost=1&autocomplete_id=&search_tracking_id=dzZ1ekuOaUwyESqdbFwE_Q&searchterm=tricep%20extension&show_color_wheel=1&orient=&commercial_ok=&media_type=images&search_cat=&searchtermx=&photographer_name=&people_gender=&people_age=&people_ethnicity=&people_number=&color=&page=1&inline=293234051"
+		picUrl: "http://thumb7.shutterstock.com/display_pic_with_logo/917120/293234051/stock-photo-young-adult-bodybuilder-doing-triceps-overhead-extension-rope-exercise-293234051.jpg"
 	},
 	{
 		exerciseName: CNST.HAMMER_CURLS,
@@ -159,7 +159,7 @@ var exercises = [
 		baseWeight: CNST.HAMMER_CURLS_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/40021m.mp4",
-		picUrl: "http://www.shutterstock.com/s/hammer+curls/search.html?page=1&thumb_size=mosaic&inline=225536476"
+		picUrl: "http://thumb9.shutterstock.com/display_pic_with_logo/217465/225536476/stock-photo-a-man-on-a-black-background-doing-hammer-curls-225536476.jpg"
 	},
 	{
 		exerciseName: CNST.STANDING_BICEPS_CABLE_CURL,
@@ -167,7 +167,7 @@ var exercises = [
 		baseWeight: CNST.STANDING_BICEPS_CABLE_CURL_WEIGHT,
 		bodyWeight: false,
 		videoUrl: "http://videocdn.bodybuilding.com/video/mp4/40000/41781m.mp4",
-		picUrl: "http://www.shutterstock.com/s/cable+curl/search.html?page=6&thumb_size=mosaic&inline=69079705"
+		picUrl: "http://thumb7.shutterstock.com/display_pic_with_logo/61398/61398,1295193332,5/stock-photo-young-bodybuilder-training-in-the-gym-standing-biceps-cable-curl-69079705.jpg"
 	},
 	{
 		exerciseName: CNST.CLOSE_GRIP_BARBELL_BENCH_PRESS,

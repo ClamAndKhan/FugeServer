@@ -17,7 +17,7 @@ module.exports = function(app,router) {
   router.route('/users/login') 
   	.post(UserCtrl.login)
 
-  router.route('/users/signup/beta')
-    .post(UserCtrl.signupBeta)
+  router.route('/users/email/beta')
+    .post(UserCtrl.sendBetaEmail)
 
 }

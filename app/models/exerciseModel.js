@@ -7,6 +7,7 @@ var ExerciseSchema   = new Schema({
     baseWeight: { type: Number, required: true },
     bodyWeight: { type: Boolean, required: true },
     videoUrl: {type: [String], required: true},
+    colorData: {type: {}, required: true},
     picUrl: {type: [String], required: true}
 });
 

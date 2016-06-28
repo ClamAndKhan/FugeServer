@@ -17,23 +17,16 @@ var UserController = {
 		})
 	},
 
-	signupBeta: function (req, res, next) {
-
-		fs.readFile(path.join(__dirname,'../externalServices/mailTemplates/betaSignup.html'), function read(err, data) {
-		    if (err) {
-		        throw err;
-		    }
-		    var emailTemplate = data;
-
-			MailService.sendEmail(emailTemplate,"Fuge Beta: You're invited", req.email, function(err, response) {
-				if(err){
-					console.log('error!', err);
-					res.send(err);
-				}
-				res.json(response);
-			})
-		});
-
+	sendBetaEmail: function (req, res, next) {
+		console.log('heyyo')
+		console.log('req.body',req.body)
+		MailService.sendEmail(req.body.email,function(err,response) {
+			if(err){
+				console.log('error!', err);
+				res.send(err);
+			}
+			res.json(response);
+		})
 
 	},
 
