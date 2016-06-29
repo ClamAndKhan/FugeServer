@@ -1,19 +1,7 @@
-// var nodemailer = require('nodemailer');
 var mandrill = require('mandrill-api/mandrill');
 var mandrill_client = new mandrill.Mandrill('gfJeMiYndOSY06WBRjmZyw');
-// var mandrill = require('node-mandrill')('gfJeMiYndOSY06WBRjmZyw');
-console.log('mandrill_client: ',mandrill_client)
 var config = require.main.require('./config.js');
 
-
-
-// var transporter = nodemailer.createTransport({
-// 	service: 'Gmail',
-// 	auth: {
-// 		user: config.email,
-// 		pass: config.password
-// 	}
-// })
 
 module.exports = {
 	sendEmail: function (email,cb) {

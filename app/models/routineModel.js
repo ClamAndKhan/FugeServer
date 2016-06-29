@@ -10,6 +10,7 @@ var RoutineSchema   = new Schema({
     daysPerWeek: { type: Number, required: true },
     workoutNames: {type: [String], required: true},
     picUrl: {type: String},
+    colorData: {type: {}},
     sourceUrl: {type: String}
 });
 
