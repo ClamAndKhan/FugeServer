@@ -23,4 +23,18 @@ $(function() {
   /*-----------------------------------------------------------------------------------*/
   $('.tooltip-side-nav').tooltip();
   
+  $('.signup').click(function(){
+    console.log("Hey there")
+    $.ajax({
+      type: "POST",
+      url: "localhost:8080/api/users/create",
+      data: {"email":"test"},
+      success: function (err, res) {
+        console.log('error',err)
+        console.log('result',res)
+      },
+      dataType: dataType
+    });
+  })
+
 });

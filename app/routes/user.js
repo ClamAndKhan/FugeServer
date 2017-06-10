@@ -8,7 +8,7 @@ module.exports = function(app,router) {
 
   router.route('/users/create')
   	.post(
-      mdw.validate('users_create'), 
+      // mdw.validate('users_create'), 
       UserCtrl.create)
 
   router.route('/users/updateInfo')

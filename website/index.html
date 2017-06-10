@@ -55,6 +55,7 @@
       //     });
       // });
       $(document).ready(function() {
+
         $('form').on('submit', function(e){
           console.log('email: ', $(this).find('#InputEmail').val())
           e.preventDefault();
@@ -66,6 +67,8 @@
             $(context).find('#InputEmail').val('Thanks!')
           })
         });
+
+        
       });
     </script>
   </head>
@@ -132,6 +135,10 @@
               <button id="signup" class="btn btn-success" type="submit">Subscribe</button>
               
             </form> 
+
+            <script type="text/javascript">
+
+            </script>
             <!-- /.subscribe-form -->
 
 
